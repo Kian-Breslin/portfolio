@@ -44,9 +44,11 @@
 }
 
 .projects {
-
+    border: 5px solid blue;
+    height: 90vh;
 }
 
 .contact {
-
+    border: 5px solid blue;
+    height: 90vh;
 }
