@@ -11,33 +11,67 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/77b8519cb9.js" crossorigin="anonymous"></script>
     </head>
 <body>
-    
     <div class="navBar">
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <a href="#home">
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </li>
+            </a>
+            <a href="#about">
+                <li>
+                    <i class="fa-solid fa-address-card"></i>
+                    <p>About</p>
+                </li>
+            </a>
+            <a href="#projects">
+                <li>
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <p>Projects</p>
+                </li>
+            </a>
         </ul>
     </div>
-    <div class="name">
+    <div class="name" id="home">
+        <h4>Hi, my name is</h4> 
         <h1>Kian Breslin</h1>
+        <h3>Front-end Developer & Student</h3>
+        <div class="contactIcons">
+            <a href="https://github.com/Kian-Breslin" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kian-breslin-b23521246/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </div>
     </div>
     
-    <div class="about">
-        About
+    <div class="about" id="about">
+        <div class="aboutSection">
+            <h1>About</h1>
+            <div class="aboutContent">
+                <div class="experience">
+                    <p>Experience</p>
+                    <button class="exp">Show More</button>
+                </div>
+                <div class="languages">
+                    <p>Languages</p>
+                    <button class="exp">Show More</button>
+                </div>
+                <div class="education">
+                    <p>Education</p>
+                    <button class="exp">Show More</button>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="projects">
         Projects
     </div>
 
-    <div class="contact">
-        Contact
-    </div>
-
+    
     <script src="app.js"></script>
 </body>
 </html>

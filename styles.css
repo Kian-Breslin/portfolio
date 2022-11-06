@@ -1,54 +1,204 @@
 * {
     margin: 0;
     font-family: "josefin Sans";
+    scroll-behavior: smooth;
+    background-color: #2b323c;
+    text-decoration: none;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
 
 .navBar {
-    position: -webkit-sticky;
     position: sticky;
-    top: 0;
-    left: 25%;
-    background-color: white;
+    top: 400px;
+    left: 10px;
     color: black;
     display: flex;
-    justify-content: center;
-    border: 5px solid black;
-    border-radius: 100px;
-    width: 90%;
-    height: 5vh;
-    font-size: 2.5vh;
-    margin: 2vw;
+    justify-content: left;
+    border: 3px solid white;
+    border-radius: 10px;
+    height: 120px;
+    width: 50px;
+    font-size: 25px; 
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.navBar:hover {
+    width: 160px;
 }
 
 .navBar ul {
     display: flex;
-    gap: 5vw;
+    flex-direction: column;
+    gap: 10px;
     list-style: none;
-    padding: 1.25vh;
+    padding: 12.5px;
+}
+
+.navBar li {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.navBar li:hover {
+    opacity: 70%;
+    color: white;
+    cursor: pointer;
+}
+
+.navBar p {
+    width: 80px;
+    text-align: left;
+}
+
+.navBar a {
+    color: white;
 }
 
 .name {
-    border: 5px solid red;
-    height: 90vh;
+    height: 100vh;
+    position: relative;
+    top: -156px;
 }
 
 .name h1 {
+    position: relative;
+    top: 40%;
     display: flex;
     justify-content: center;
+    font-size: 60px;
+    text-align: center;
+    line-height: 70px;
+    color: #FF3131;
+}
+
+.name h3 {
+    position: relative;
+    top: 42%;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.name h4 {
+    position: relative;
+    top: 38%;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+.contactIcons {
+    position: relative;
+    top: 47%;
+    left: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    width: 50%;
+    font-size: 40px;
+}
+
+.contactIcons i {
+    color: red;
+}
+
+.contactIcons i:hover {
+    opacity: 80%;
+    cursor: pointer;
 }
 
 .about {
-    border: 5px solid blue;
-    height: 90vh;
+    display: flex;
+    /* border: 5px solid blue; */
+    color: white;
+    height: 100vh;
+    justify-content: center;
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.aboutSection h1::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 30px;
+    width: 200px;
+    height: 3px;
+    margin-left: 20px;
+    background-color: red;
+}
+.aboutSection h1::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 30px;
+    width: 200px;
+    height: 3px;
+    margin-right: 20px;
+    background-color: red;
+}
+
+.aboutSection h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    font-size: 60px;
+}
+
+.aboutContent {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 15%;
+    font-size: 40px;
+}
+
+.experience, .languages, .education {
+    border: 2px solid pink;
+    overflow: hidden;
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 0px 20px;
+}
+
+.exp {
+    border-radius: 10px;
+    height: 30px;
+    border: 2px solid white;
+    margin-right: 10px;
+    color: white;
+}
+
+.exp:hover {
+    cursor: pointer;
+    border: 2px solid red;
 }
 
 .projects {
+    display: flex;
+    justify-content: center;
     border: 5px solid blue;
-    height: 90vh;
+    height: 100vh;
+    font-size: 5vw;
 }
 
-.contact {
-    border: 5px solid blue;
-    height: 90vh;
-}
+/* ▹▹▹▹▹▹▹▹▹▹▹▹▹ */
