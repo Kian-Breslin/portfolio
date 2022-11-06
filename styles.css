@@ -12,48 +12,24 @@
 
 .navBar {
     position: sticky;
-    top: 400px;
-    left: 10px;
-    color: black;
+    top: 85vh;
     display: flex;
-    justify-content: left;
-    border: 3px solid white;
-    border-radius: 10px;
-    height: 120px;
-    width: 50px;
-    font-size: 25px; 
-    overflow: hidden;
-    transition: 0.5s;
+    justify-content: space-evenly;
+    height: 70px;
+    font-size: 30px;
     z-index: 10;
-}
-
-.navBar:hover {
-    width: 160px;
+    background-color: transparent;
 }
 
 .navBar ul {
+    width: 50%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
     gap: 10px;
     list-style: none;
-    padding: 12.5px;
-}
-
-.navBar li {
-    display: flex;
-    justify-content: space-around;
-    gap: 25px;
-}
-
-.navBar li:hover {
-    opacity: 70%;
-    color: white;
-    cursor: pointer;
-}
-
-.navBar p {
-    width: 80px;
-    text-align: left;
+    padding: 20px 0px 0px 0px;
+    border: 2px solid red;
+    border-radius: 20px;
 }
 
 .navBar a {
