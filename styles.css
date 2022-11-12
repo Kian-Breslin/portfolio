@@ -12,7 +12,7 @@
 
 .navBar {
     position: sticky;
-    top: 85vh;
+    top: 80vh;
     display: flex;
     justify-content: space-evenly;
     height: 70px;
