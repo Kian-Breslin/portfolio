@@ -118,14 +118,13 @@ header {
 
 .mainAbout {
     height: 120vh;
-    
+    border: 2px solid skyblue;
     color: white;
     padding-top: 5rem;
     display: flex;
 }
 
 .about {
-    
     width: 90%;
     height: 100%;
     position: relative;
@@ -133,55 +132,19 @@ header {
 }
 
 .about p {
-    font-family: 'Courier New', Courier, monospace;
-    padding-left: 5%;
-    font-size: 1.5rem;
-    color: grey;
+    font-size: 50px;
+    line-height: 50px;
 }
 
-.about h2 {
-    padding-left: 8%; 
-    padding-top: 2%;
-    padding-bottom: 2%;
-    font-size: 2.5rem;
-    color: #F95454;
+.about p:nth-child(1) {
+    color: pink;
 }
-
-.about h3 {
-    padding-left: 12%; 
-    padding-top: 2%;
-    padding-bottom: 2%;
-    font-size: 1.5rem;
-    color: #F95454;
+.about p:nth-child(2) {
+    color: white;
 }
-
-.liClass {
-    font-family: 'Courier New', Courier, monospace;
-    padding-left: 8%;
-    font-size: 1.5rem;
-    color: grey;
+.about p:nth-child(3) {
+    color: red;
 }
-
-.imageGroup {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    row-gap: 2rem;
-    justify-content: space-evenly;
-    padding-left: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    
-}
-
-.about img {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 
 
 

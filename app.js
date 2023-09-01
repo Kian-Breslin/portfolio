@@ -13,30 +13,3 @@ navToggle.addEventListener("click", () => {
 })
 
 // ----------------------------------------------------- //
-
-
-function isPythagoreanTriple(nums) {
-    
-    let hn = nums.sort(function(a, b){return a-b})
-    
-    if ((hn[0]**2) + hn[1]**2 === hn[2]**2) {
-      return true
-    } else {
-      return false
-    }
-    
-    
-}
-
-function isPythagoreanTriple2(n1,n2,n3) {
-    let numbers = [n1,n2,n3]
-    
-    let hn = numbers.sort(function(a, b){return a-b})
-    
-    return (hn[0]**2) + hn[1]**2 === hn[2]**2
-  }
-
-  function test(integers) {
-    let massiv = integers.sort((a, b) => a - b)
-    return (massiv[0] ** 2 + massiv[1] ** 2 == massiv[2] ** 2)
-  }
