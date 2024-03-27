@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+:root {
+    --mainColor: #000000;
+    --titleText: #b62727;
+    --subtitleText: white;
+    --descriptionText: rgb(43, 43, 43);
+    --accentColor: brown;
+    --tertiaryColor: #676767;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+* {
+    scroll-behavior: smooth;
+}
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    /* background-image: linear-gradient(to bottom, var(--mainColor), grey); */
+    background-color: var(--mainColor);
+    color: white;
+    margin: 0;
+}
+
+/* For Screens Smaller than 735px ie Phones & Tablets */
+
+@media screen and (max-width: 869px) {
+
+    nav {
+        border-radius:10px;
+        width: 100vw;
+        height: 5vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0 10px 0;
+    }
+    
+    .logoImage img{
+        width: 50px;
+        border-radius: 20px;
+        padding: 15px;
+    }
+    
+    .navSections a{
+        color: white;
+        padding: 1rem;
+        align-content: center;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s linear;
+    }
+    
+    .navSections a:hover {
+        color: var(--titleText);
+    }
+    
+    .aboutTextSpan {
+        color: var(--titleText);
+        /* font-style: italic; */
+        font-weight: 400;
+        font-size: larger;
+    }
+    .topAbout {
+        padding-top: 5vh;
+        padding: 5vh 0 0 5vw;
+        font-weight: 200;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .textAbout {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .textAbout h1 {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    .nameSpan {
+        color: var(--titleText);
+        font-weight: 600;
+        font-size: 3rem;
+    }
+    
+    .textAbout p {
+        font-size: 1rem;
+    }
+    
+    @keyframes flashing {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    .flashing {
+        animation: flashing 1s infinite; /* Adjust duration as needed */
+    }
+    
+    
+    .mainSkills {
+        padding-top: 5vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+    
+    .skill {
+        background-color: var(--titleText);
+        height: 40vh;
+        width: 250px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .skill i {
+        color: var(--titleText);
+        font-size: 30px;
+        padding: 20px 0px 0px 15px;
+    }
+    
+    .skill h4 {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 20px;
+        font-weight: 300;
+        margin: 0;
+    }
+    
+    .skill p {
+        padding-left: 15px;
+    }
+    
+    .skill a {
+        text-decoration: none;
+        color: var(--descriptionText);
+        padding-left: 15px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 870px) {
+
+    nav {
+        border-radius:10px;
+        width: 95vw;
+        height: 5vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0 10px 20px;
+    }
+    
+    .logoImage img{
+        width: 50px;
+        border-radius: 20px;
+        padding: 15px;
+    }
+    
+    .navSections {
+        padding-right: 1rem;
+    }
+    
+    .navSections a{
+        color: var(--subtitleText);
+        padding: 1rem;
+        align-content: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        transition: color 0.3s linear;
+    }
+    
+    .navSections a:hover {
+        color: var(--titleText);
+    }
+    
+    .aboutTextSpan {
+        color: var(--titleText);
+        font-weight: 400;
+        font-size: larger;
+    }
+
+    .topAbout {
+        height: 100vh;
+        padding-top: 10vh;
+        font-weight: 200;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .textAbout {
+        padding-left: 4vw;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .textAbout h1 {
+        font-size: 3rem;
+        font-weight: 300;
+    }
+    .nameSpan {
+        color: var(--titleText);
+        font-weight: 600;
+        font-size: 4rem;
+    }
+    
+    .textAbout p {
+        font-size: 1.5rem;
+    }
+    
+    @keyframes flashing {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    .flashing {
+        animation: flashing 1s infinite; /* Adjust duration as needed */
+    }
+    
+    .iconAbout {
+        background-color: var(--titleText);
+        height: fit-content;
+        border-radius: 200px;
+    }
+    .iconAbout img {
+        width: 25rem;
+    }
+    
+    .backgroundSkill {
+        position: absolute;
+        z-index: -1;
+        top: 135vh;
+        background-color: rgb(27, 27, 27);
+        height: 70vh;
+        width: 95vw;
+    }
+
+    .mainSkills {
+        height: 100vh;
+        padding-top: 25vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    .skill {
+        background-color: var(--descriptionText);
+        height: 400px;
+        width: 350px;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 10px;
+    }
+    
+    .skill i {
+        color: var(--titleText);
+        font-size: 70px;
+        padding: 20px 0px 0px 30px;
+    }
+    
+    .skill h4 {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 25px;
+        font-weight: 400;
+        margin: 0;
+    }
+    
+    .skill p {
+        padding-left: 30px;
+        font-size: 20px;
+    }
+    
+    .skill a {
+        text-decoration: none;
+        color: var(--accentColor);
+        padding-left: 30px;
+        padding-bottom: 30px;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+
+    .projectsSection {
+        margin: 10%;
+    }
+
+    .projectsTitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 3rem;
+    }
+
+    .projectsTitle button {
+        width: 6rem;
+        height: 2rem;
+        align-content: center;
+        border-radius: 0;
+        border: none;
+        background-color: var(--titleText);
+        color: var(--subtitleText);
+    }
+
+    .projectList {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2.5rem;
+    }
+
+    .project {
+        background-color: var(--tertiaryColor);
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .workTogether {
+        display: flex;
+        margin-left: 15%;
+        margin-bottom: 10vh;
+        width: 70%;
+        background-color: rgb(19, 19, 19);
+        border-radius: 10px;
+    }
+
+    .workTogetherLeft {
+        width: 70%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 10px;
+        padding-left: 7%;
+        padding-bottom: 10%;
+    }
+
+    .workTogetherLeft h2 {
+        font-size: 50px;
+    }
+
+    .workTogetherRight {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .workTogetherRight button {
+        width: 8rem;
+        height: 3rem;
+        align-content: center;
+        border-radius: 0;
+        border: none;
+        background-color: var(--titleText);
+        color: var(--subtitleText);
+        font-size: 15px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        background-color: #373737;
+        align-items: center;
+        padding: 5px;
+        color: #000000a8;
+        width: 100%;
+        height: 5vh;
+    }
+
+    .footerImage {
+        width: 10%;
+    }
+    footer img {
+        width: 30px;
+    }
+
+    footer .socialsIcon {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        color: #000000a8;
+        width: 80%;
+    }
+    .copyrightText {
+        width: 10%;
+        font-size: 12px;
+    }
