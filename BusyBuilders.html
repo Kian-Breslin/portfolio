@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BusyBuilders</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-bg: #f4f4f4;
+            --primary-text: #222;
+            --accent: #4f8cff;
+            --button-bg: #222;
+            --button-text: #fff;
+            --button-hover: #4f8cff;
+            --button-hover-text: #fff;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--primary-bg);
+            color: var(--primary-text);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+        }
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: var(--primary-text);
+            margin-bottom: 0.5rem;
+        }
+        .logo-accent {
+            color: var(--accent);
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .cta-btn {
+            background: var(--button-bg);
+            color: var(--button-text);
+            border: none;
+            padding: 1rem 2.5rem;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            box-shadow: 0 2px 8px rgba(34,34,34,0.04);
+            margin-top: 1.5rem;
+        }
+        .cta-btn:hover {
+            background: var(--button-hover);
+            color: var(--button-hover-text);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            color: #aaa;
+            font-size: 0.95rem;
+            border-top: 1px solid #e0e0e0;
+            background: #fafafa;
+        }
+        .feature {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 12px;
+            padding: 0.2em 0.7em;
+            font-size: 0.95em;
+            margin-left: 0.5em;
+            vertical-align: middle;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Busy<span class="logo-accent">Builders</span>
+        </div>
+        <div class="subtitle">
+            Organize your projects, track your progress, and build better—<span class="feature">fast</span>
+        </div>
+    </header>
+    <main>
+        <p style="max-width: 420px; text-align: center; color: #444;">
+            BusyBuilders helps you manage your tasks and projects with a clean, distraction-free interface. Stay focused and productive, whether you’re working solo or with a team.
+        </p>
+        <button class="cta-btn">Get Started</button>
+    </main>
+    <footer>
+        &copy; 2024 BusyBuilders. All rights reserved.
+    </footer>
+</body>
+</html>
