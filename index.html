@@ -2,129 +2,226 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kian Breslin</title>
-
-    <script src="https://kit.fontawesome.com/9fb9105312.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="./iconThumbs.png">
-
+    <title>Kian Breslin - iOS Developer & Digital Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts/satoshi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div class="logoImage">
-            <img src="./iconThumbs.png">
-        </div>
-        <div class="navSections">
-            <a href="">Home</a>
-            <a href="#projectsSection">About</a>
-            <a href="#mainSkills">Work</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Kian Breslin</span>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#work" class="nav-link">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#more" class="nav-link">More</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="#contact" class="contact-btn">Contact Me</a>
+                <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <section class="topAbout">
-        <div class="textAbout">
-            <h1>Hello, my name is <span class="nameSpan">Kian</span><span class="flashing"> |</span></h1>
-            <p>
-                I am a profesional <span class="aboutTextSpan">Web</span> and <span class="aboutTextSpan">IOS</span> Developer. 
-                <br>
-                I have 3+ years experience.
-                I aquired my skills through <span class="aboutTextSpan">Self Teaching</span> and <span class="aboutTextSpan">College</span>.
-                <br>
-                I enjoy every step in the Design & Development process.
-                <br> 
-                From <span class="aboutTextSpan">Designing</span> the UI with the end user in mind 
-                to <span class="aboutTextSpan">Building</span> from a concept to produce a beautiful product
-            </p>
-        <!-- <button>Click </button> -->
-
-        </div>
-        <div class="iconAbout">
-            <img src="./icon.png">
-        </div>
-    </section>
-
-    <section>
-        <div class="backgroundSkill"></div>
-        <div class="mainSkills" id="mainSkills">
-            <div class="skill webDesignSkill">
-                <i class="fa-solid fa-code"></i>
-                <h4>Web Development</h1>
-                <p>Lorem ipsum dolor sit amet 
-                    consectetur adipisicing elit.  
-                </p>
-                <a href="">Learn More -></a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">
+                We <span class="highlight"><span>build</span></span>, <span class="highlight"><span>design</span></span> and <span class="highlight"><span>redefine</span></span> apps, brands and tools to solve what really matters.
+            </h1>
+            
+            <!-- Content Grid -->
+            <div class="content-grid">
+                <div class="grid-item">
+                    <div class="grid-content">
+                        <h3>Brand Design</h3>
+                        <i class="fas fa-external-link-alt grid-icon"></i>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-content">
+                        <h3>App Development</h3>
+                        <i class="fas fa-external-link-alt grid-icon"></i>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-content">
+                        <h3>Web Development</h3>
+                        <i class="fas fa-external-link-alt grid-icon"></i>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-content">
+                        <h3>UX/UI Design</h3>
+                        <i class="fas fa-external-link-alt grid-icon"></i>
+                    </div>
+                </div>
             </div>
-            <div class="skill mobileDesignSkill">
-                <i class="fa-solid fa-mobile"></i>
-                <h4>Mobile Development</h1>
-                <p>Lorem ipsum dolor sit amet 
-                    consectetur adipisicing elit.  
-                </p>
-                <a href="">Learn More -></a>
-            </div>
-            <div class="skill UIUXDesign">
-                <i class="fa-regular fa-pen-to-square"></i>
-                <h4>UI & UX Design</h1>
-                <p>Lorem ipsum dolor sit amet 
-                    consectetur adipisicing elit.  
-                </p>
-                <a href="">Learn More -></a>
+            
+            <div class="hero-cta">
+                <span>View Our Projects</span>
+                <div class="cta-icon">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="projectsSection" id="projectsSection">
-        <div class="projectsTitle">
-            <h2>Featured Projects</h2>
-            <button>View All</button>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+                    <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I'm a passionate developer and designer with a love for creating intuitive, 
+                    beautiful digital experiences. My journey in tech started with a curiosity 
+                    about how things work, and has evolved into a career building apps and 
+                    websites that people actually enjoy using.
+                </p>
+                <p>
+                    When I'm not coding or designing, you'll find me exploring new technologies, 
+                    contributing to open source projects, or sharing knowledge with the developer community.
+                </p>
+                <div class="skills">
+                    <h3>Skills & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Swift</span>
+                        <span class="skill-tag">SwiftUI</span>
+                        <span class="skill-tag">UIKit</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Adobe Creative Suite</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="projectList">
-            <div class="project A">
-                <a href="/BusyBuilders.html">BusyBuilders</a>
-            </div>
-            <div class="project B">
-                Project B
-            </div>
-            <div class="project C">
-                Project C
-            </div>
-            <div class="project D">
-                Project D
-            </div>
-
-        </div>
-    </div>
-
-    <section class="workTogether">
-        <div class="workTogetherLeft">
-            <h2>Lets work together!</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Facilis debitis accusamus magnam vitae sit ad totam 
-            </p>
-        </div>
-        <div class="workTogetherRight">
-            <button>Contact Me!</button>
         </div>
     </section>
 
-    <footer>
-        <div class="footerImage">
-            <img src="./icon.png">
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="container">
+                    <h2 class="section-title">Featured Work</h2>
+        
+        <!-- Busy Builders Project -->
+        <div class="project-card featured">
+                <div class="project-content">
+                    <div class="project-info">
+                        <h3 class="project-title">Busy Builders</h3>
+                        <p class="project-category">iOS App • Productivity</p>
+                        <p class="project-description">
+                            BusyBuilders is the ultimate productivity app that transforms your focus into success. 
+                            Turn every study session or work hour into a rewarding experience—earn cash, unlock upgrades, 
+                            and grow virtual businesses while staying on track.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Swift</span>
+                            <span class="tech-tag">SwiftUI</span>
+                            <span class="tech-tag">Core Data</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.busybuilders.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Project
+                            </a>
+                            <a href="https://apps.apple.com/us/app/busybuilders-focus-timer/id6748688412" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Download from the App Store
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="project-gallery">
+                        <div class="gallery-grid">
+                            <img src="Images/BBDashboard.jpeg" alt="Busy Builders Dashboard" class="gallery-image">
+                            <img src="Images/BBPlay.jpeg" alt="Busy Builders Play Screen" class="gallery-image">
+                            <img src="Images/BBPortfolio.jpeg" alt="Busy Builders Portfolio" class="gallery-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="socialsIcon">
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-brands fa-github"></i>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+                    <h2 class="section-title">Let's Work Together</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <p>
+                    I'm always interested in new opportunities and exciting projects. 
+                    Whether you have a question or just want to say Hi, feel free to reach out!
+                </p>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <span>Kianbreslin517@gmail.com</span>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
         </div>
-        <div class="copyrightText">
-            <i class="fa-regular fa-copyright"></i> Made by Kian Breslin
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Kian Breslin. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
